@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">JMODAS<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="cestinha.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom1.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Branco</h3>
+                            <p>R$ 100,00</p>
+                            <button onclick="addCarrinho('Moletom 1', 80.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Rosa Claro</h3>
+                            <p>R$ 120,00</p>
+                            <button onclick="addCarrinho('Moletom 2', 120.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom3.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Preto</h3>
+                            <p>R$ 125,00</p>
+                            <button onclick="addCarrinho('Moletom 3', 90.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom4.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom off-White</h3>
+                            <p>R$ 110,00</p>
+                            <button onclick="addCarrinho('Moletom 4', 140.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom5.jpeg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Roxo</h3>
+                            <p>R$ 150,00</p>
+                            <button onclick="addCarrinho('Moletom 5', 110.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom5.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Vermelho</h3>
+                            <p>R$ 190,00</p>
+                            <button onclick="addCarrinho('Moletom 6', 85.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
